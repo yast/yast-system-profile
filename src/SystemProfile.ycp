@@ -58,14 +58,6 @@ string firstTimeFlagFile = "/var/lib/YaST2/systemProfileDidRun";
 boolean modified = false;
 
 
-/**
- * Data was modified?
- * @return true if modified
- */
-global boolean Modified() {
-    y2debug("modified=%1",modified);
-    return modified;
-}
 
 /**
  * Execute the smolt command to read or submit data

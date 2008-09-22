@@ -22,6 +22,7 @@ Summary:	Configuration of system-profile
 %files
 %defattr(-,root,root)
 %dir @yncludedir@/system-profile
+@schemadir@/autoyast/rnc/system-profile.rnc
 @yncludedir@/system-profile/*
 @clientdir@/system-profile.ycp
 @clientdir@/system-profile_*.ycp
