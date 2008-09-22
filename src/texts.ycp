@@ -1,0 +1,76 @@
+/* ------------------------------------------------------------------------------
+ * Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+ *
+ *
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of version 2 of the GNU General Public License as published by the
+ * Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, contact Novell, Inc.
+ *
+ * To contact Novell about this file by physical or electronic mail, you may find
+ * current contact information at www.novell.com.
+ * ------------------------------------------------------------------------------
+ */
+
+/**
+ * File:	include/system-profile/texts.ycp
+ * Package:	Configuration of system-profile
+ * Summary:	Help texts of all the dialogs
+ * Authors:	J. Daniel Schmidt <jdsn@suse.de>
+ *
+ * $Id: helps.ycp 27914 2008-09-16 15:32:08Z jdsn $
+ */
+
+{
+
+textdomain "system-profile";
+
+
+string MONTHLYCHECKBOX = _("Automatically send system profile monthly (recommended)");
+
+/**
+ * All descriptions are here
+ */
+map DESC = $[
+    "short" : _("Driver development is prioritized based on hardware popularity.\nPlease send your system profile to influence this work."),
+    "long"  : _("Driver development is prioritized based on hardware popularity.\nPlease send your system profile to a community database to help\ncreating current statistics."),
+    "smolt" : _("Driver development is prioritized based on hardware popularity.\nThe community project smolt creates statistics from contributed\nsystem profiles. Please send your system profile to support smolt.")
+];
+
+
+/**
+ * All titles are here
+ */
+map TITLES = $[
+    "smolt"             : _("Smolt"),
+    "smoltProject"      : _("Smolt Project"),
+    "systemProfile"     : _("System Profile"),
+    "sendSystemProfile" : _("Send System Profile")
+];
+
+/**
+ * All helps are here
+ */
+map HELPS = $[
+    "c1" : _("<p>Linux driver development is priotitized based on hardware popularity. You can submit your system profile to a community database to influence this work.<p>"),
+    "c2" : _("<p>To keep your system profile updated in this database please activate to send the data monthly.</p>"),
+    "c3" : _("<p>Your system profile will be transmitted to the smolt project. Visit <b>http://smolts.org</b> for details.</p>"),
+    "c4" : _("<p>Once you sent your profile manually, you will receive a URL and a password to edit and comment your profile online. Press <b>Send Profile</b> to send the profile manually.</p>")
+];
+
+map UIELEM = $[
+    "send" : _("Send Profile"),
+    "show" : _("Show Profile"),
+    "sendNow"  : _("Send Profile Now"),
+    "sendOnce" : _("Send Profile Once")
+];
+
+
+/* EOF */
+}

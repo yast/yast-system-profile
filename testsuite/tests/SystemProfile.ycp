@@ -1,0 +1,13 @@
+{
+
+// testedfiles: SystemProfile.ycp
+
+include "testsuite.ycp";
+TESTSUITE_INIT([], nil);
+
+import "SystemProfile";
+
+DUMP("SystemProfile::Modified");
+TEST(``(SystemProfile::Modified()), [], nil);
+
+}
