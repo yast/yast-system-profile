@@ -38,6 +38,7 @@ y2milestone("----------------------------------------");
 y2milestone("SystemProfile auto started");
 
 import     "SystemProfile";
+import     "Summary";   
 include    "system-profile/dialogs.ycp";
 include    "system-profile/texts.ycp";
 textdomain "system-profile";
@@ -55,8 +56,32 @@ if(size(WFM::Args()) > 0 && is(WFM::Args(0), string)) {
 y2debug("func=%1", func);
 y2debug("param=%1", param);
 
+
+
+
+
+/**
+ * Create a textual summary
+ * @return summary of the current configuration
+ */
+string Summary()
+{
+    string summary = "";
+    summary = Summary::AddHeader (summary, TITLES["smoltProject"]:"" );
+    summary = Summary::AddLine   (summary, SystemProfile::smoltMonthlyEnabled ? UIELEM["sendProfileMonthly"]:"" : UIELEM["disbleSendingProfile"]:"");
+    return summary;
+}
+
+
+
+
+
+/* Create a summary*/
+if(func == "Summary") {
+    ret = Summary();
+}
 /* Reset configuration */
-if (func == "Reset") {
+else if (func == "Reset") {
     SystemProfile::Import($[]);
     ret = $[];
 }

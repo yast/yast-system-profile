@@ -68,7 +68,9 @@ map UIELEM = $[
     "send" : _("Send Profile"),
     "show" : _("Show Profile"),
     "sendNow"  : _("Send Profile Now"),
-    "sendOnce" : _("Send Profile Once")
+    "sendOnce" : _("Send Profile Once"),
+    "sendProfileMonthly" : _("Send profile monthly."),
+    "disbleSendingProfile" : _("Do not send profile monthly.")
 ];
 
 
