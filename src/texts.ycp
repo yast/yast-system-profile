@@ -58,7 +58,7 @@ map TITLES = $[
  * All helps are here
  */
 map HELPS = $[
-    "c1" : _("<p>Linux driver development is priotitized based on hardware popularity. You can submit your system profile to a community database to influence this work.<p>"),
+    "c1" : _("<p>Linux driver development is prioritized based on hardware popularity. You can submit your system profile to a community database to influence this work.</p>"),
     "c2" : _("<p>To keep your system profile updated in this database please activate to send the data monthly.</p>"),
     "c3" : _("<p>Your system profile will be transmitted to the smolt project. Visit <b>http://smolts.org</b> for details.</p>"),
     "c4" : _("<p>Once you sent your profile manually, you will receive a URL and a password to edit and comment your profile online. Press <b>Send Profile</b> to send the profile manually.</p>")
@@ -70,7 +70,9 @@ map UIELEM = $[
     "sendNow"  : _("Send Profile Now"),
     "sendOnce" : _("Send Profile Once"),
     "sendProfileMonthly" : _("Send profile monthly."),
-    "disbleSendingProfile" : _("Do not send profile monthly.")
+    "disbleSendingProfile" : _("Do not send profile monthly."),
+    "errorWhileSending"    : _("An error occurred and the system profile was not sent."),
+    "serverOrNetworkDown"  : _("Maybe your network is disconnected or the target server is down.")
 ];
 
 
