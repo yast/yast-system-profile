@@ -90,8 +90,8 @@ symbol SystemProfileDialog ()
             else
             {
                 y2milestone("executeSmoltCmd returned emtpy or nil data, thus an error occurred.");
-                string errMsg1 = _("An error occrred while gathering system information.");           // keeping this one for an overload translation
-                string errMsg1_correct = _("An error occurred while gathering system information.");  // (bnc#441221) FIXME after openSUSE 11.1
+                // (bnc#441221) fix typo
+                string errMsg1 = _("An error occurred while gathering system information.");
                 string errMsg2 = _("Please make sure that the smolt package is installed.");
                 Popup::Message(sformat("%1\n%2", errMsg1, errMsg2));
             }
