@@ -9,7 +9,11 @@ BuildArchitectures:	noarch
 Summary:	A YaST module to interact with system profiling tools
 
 %description
--
+yast2-system-profile uses profiling tools such as Smolt to collect and
+send system and hardware profiles of a linux system. This data is
+collected and based on these statistics developers will prioritize
+their work on drivers. The collected data may also help when asking
+hardware vendors to provide open source drivers.
 
 @PREP@
 
