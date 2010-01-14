@@ -20,9 +20,8 @@ X-SuSE-YaST-SortKey=
 X-SuSE-YaST-AutoInstResource=system-profile
 
 Icon=yast-system-profile
-Exec=/sbin/yast2 system-profile
+Exec=xdg-su -c "/sbin/yast2 system-profile"
 
 Name=Smolt Project
 GenericName=Smolt Project
-X-KDE-SubstituteUID=true
 
