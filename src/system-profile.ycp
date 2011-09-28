@@ -52,7 +52,7 @@ SystemProfile::Read();
 any ret = nil;
 
 Wizard::CreateDialog();
-Wizard::SetTitleIcon ("yast-support");
+Wizard::SetDesktopTitleAndIcon ("system-profile");
 Wizard::SetNextButton(`next, Label::FinishButton() );
 
 ret = SystemProfileDialog();
