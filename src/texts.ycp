@@ -38,9 +38,17 @@ string MONTHLYCHECKBOX = _("Automatically send system profile monthly (recommend
  * All descriptions are here
  */
 map DESC = $[
-    "short" : _("Driver development is prioritized based on hardware popularity.\nPlease send your system profile to influence this work."),
-    "long"  : _("Driver development is prioritized based on hardware popularity.\nPlease send your system profile to a community database to help\ncreating current statistics."),
-    "smolt" : _("Driver development is prioritized based on hardware popularity.\nThe community project smolt creates statistics from contributed\nsystem profiles. Please send your system profile to support smolt.")
+    "short" : _("Driver development is prioritized according to hardware popularity.
+Please send your system profile to influence this work.
+"),
+    "long"  : _("Driver development is prioritized according to hardware popularity.
+Please send your system profile to a community database to help
+creating current statistics.
+"),
+    "smolt" : _("Driver development is prioritized according to hardware popularity.
+The community project Smolt creates statistics from contributed
+system profiles. Please send your system profile to support Smolt.
+")
 ];
 
 
@@ -58,8 +66,8 @@ map TITLES = $[
  * All helps are here
  */
 map HELPS = $[
-    "c1" : _("<p>Linux driver development is prioritized based on hardware popularity. You can submit your system profile to a community database to influence this work.</p>"),
-    "c2" : _("<p>To keep your system profile updated in this database please activate to send the data monthly.</p>"),
+    "c1" : _("<p>Linux driver development is prioritized according to hardware popularity. You can submit your system profile to a community database to influence this work.</p>"),
+    "c2" : _("<p>To keep your system profile updated in this database, activate sending the data monthly.</p>"),
     "c3" : _("<p>Your system profile will be transmitted to the smolt project. Visit <b>http://smolts.org</b> for details.</p>"),
     "c4" : _("<p>Once you sent your profile manually, you will receive a URL and a password to edit and comment your profile online. Press <b>Send Profile</b> to send the profile manually.</p>")
 ];
@@ -71,7 +79,7 @@ map UIELEM = $[
     "sendOnce" : _("Send Profile Once"),
     "sendProfileMonthly" : _("Send profile monthly."),
     "disbleSendingProfile" : _("Do not send profile monthly."),
-    "errorWhileSending"    : _("An error occurred and the system profile was not sent."),
+    "errorWhileSending"    : _("An error occurred and the system profile has not been sent."),
     "serverOrNetworkDown"  : _("Maybe your network is disconnected or the target server is down.")
 ];
 

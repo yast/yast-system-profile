@@ -92,7 +92,7 @@ symbol SystemProfileDialog ()
                 y2milestone("executeSmoltCmd returned emtpy or nil data, thus an error occurred.");
                 // (bnc#441221) fix typo
                 string errMsg1 = _("An error occurred while gathering system information.");
-                string errMsg2 = _("Please make sure that the smolt package is installed.");
+                string errMsg2 = _("Make sure that the smolt package is installed.");
                 Popup::Message(sformat("%1\n%2", errMsg1, errMsg2));
             }
         }
@@ -102,8 +102,10 @@ symbol SystemProfileDialog ()
             UI::ReplaceWidget(`id(`smoltDataReplace), `RichText(`id(`smoltData), `opt(`plainText), ""));
             UI::ChangeWidget(`id(`smoltData), `Value, sysData);
             UI::RecalcLayout();
-            string notifyHeading = _("System profile was sent successfully.");
-            string notifyBody    = _("Find a URL an your password to edit and comment your\nprofile online at the end of the system profile details.");
+            string notifyHeading = _("System profile has been successfully sent.");
+            string notifyBody    = _("At the end of the system profile details, find a URL and your password to edit
+and comment your profile online.
+");
 
             Popup::Notify(sformat("%1\n\n%2", notifyHeading, notifyBody));
         }
